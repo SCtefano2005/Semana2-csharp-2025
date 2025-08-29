@@ -1,0 +1,58 @@
+﻿<Window x:Class="Semana2.ConductorTabla"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lista de Conductores" Height="400" Width="700" Background="#f9fafb">
+
+    <Grid Margin="15">
+        <!-- Título -->
+        <TextBlock Text="Lista de Conductores" 
+                   FontSize="22" 
+                   FontWeight="Bold" 
+                   Foreground="#111827"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,10"/>
+
+        <!-- DataGrid con estilo -->
+        <DataGrid Name="dgConductores" 
+                  AutoGenerateColumns="True" 
+                  IsReadOnly="True" 
+                  CanUserAddRows="False"
+                  Grid.Row="1"
+                  Margin="0,40,0,60"
+                  Background="White"
+                  BorderBrush="#E5E7EB"
+                  BorderThickness="1"
+                  RowHeight="30"
+                  FontSize="14"
+                  AlternatingRowBackground="#F3F4F6"/>
+
+        <!-- Barra de botones -->
+        <StackPanel Orientation="Horizontal" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Bottom" 
+                     
+                    Margin="0,0,0,10">
+
+            <Button Content="Agregar Conductor" 
+                    Width="150" Height="35" 
+                    Background="#2563EB" 
+                    Foreground="White" 
+                    FontWeight="Bold" 
+                    Click="Button_Click_3"/>
+
+            <Button Content="Menú Principal" 
+                    Width="150" Height="35" 
+                    Background="#10B981" 
+                    Foreground="White" 
+                    FontWeight="Bold" 
+                    Click="Button_Click_2"/>
+
+            <Button Content="Cerrar" 
+                    Width="120" Height="35" 
+                    Background="#EF4444" 
+                    Foreground="White" 
+                    FontWeight="Bold" 
+                    Click="Button_Click_1"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,44 @@
+﻿<Window x:Class="Semana2.Menues"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Semana2"
+        mc:Ignorable="d"
+        Title="Menues" Height="450" Width="800">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="250">
+
+            <TextBlock Text="Menú Principal" 
+                       FontSize="28" 
+                       FontWeight="Bold" 
+                       Foreground="Black"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,20"/>
+
+            <Button Content="Operaciones" 
+                    Height="50" 
+                    Background="#2563EB" 
+                    Foreground="White" 
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Click="Button_Click"/>
+
+            <Button Content="Mantenimientos" 
+                    Height="50" 
+                    Background="#10B981" 
+                    Foreground="White" 
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Click="Button_Click_1"/>
+
+            <Button Content="Reportes" 
+                    Height="50" 
+                    Background="#F59E0B" 
+                    Foreground="White" 
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Click="Button_Click_2"/>
+        </StackPanel>
+    </Grid>
+</Window>
